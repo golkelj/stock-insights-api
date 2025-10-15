@@ -4,7 +4,7 @@ from utils.fetch_data import get_stock_data
 stock_bp = Blueprint("stocks", __name__, url_prefix="/api")
 
 
-@app.route("/")
+@stock_bp.route("/")
 def home():
     return "Flask API is live!"
 
