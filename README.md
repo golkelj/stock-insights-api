@@ -1,4 +1,4 @@
-
+# How to use
 
 ```https://stock-insights-api-yrj7.onrender.com/api/stocks/stock/<ticker>```
 
