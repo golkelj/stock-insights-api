@@ -3,6 +3,11 @@ from utils.fetch_data import get_stock_data
 
 stock_bp = Blueprint("stocks", __name__, url_prefix="/api")
 
+
+@app.route("/")
+def home():
+    return "Flask API is live!"
+
 @stock_bp.route("/stock/<ticker>", methods=["GET"])
 def stock_info(ticker):
     try:
